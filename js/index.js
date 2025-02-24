@@ -52,7 +52,7 @@ buttons.forEach(button => {
 
 const container = document.querySelector('.box-container'); // اختر العنصر الأب الذي سيتم إضافة العناصر داخله
 
-for (let i = 1; i <= 8; i++) {
+for (let i = 2; i <= 8; i++) {
     let delay = 150 * i; // مضاعفة 150 في كل تكرار
 
     let box = `
