@@ -3,14 +3,18 @@
 
 
 
-let navbar = document.querySelector('.navbar');
+    let navbar = document.querySelector('.header .navbar');
+    let menu = document.getElementById('menu-btn');
 
     
-let menu =document.getElementById('menu-btn');
-menu.addEventListener('click',function(){
 
-    navbar.classList.toggle('active');
-})
+    menu.addEventListener('click', function () {
+        console.log("Button Clicked!");
+        navbar.classList.toggle('active');
+    });
+
+
+
  
 // this way is easy 
 // document.addEventListener('click', function (e) {

@@ -93,6 +93,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 24px 9%;
+
     
 
    
@@ -126,6 +127,7 @@ body{
     cursor: pointer;
     display: none;
 }
+
 
 
 
@@ -827,38 +829,43 @@ padding: 2rem ;
         padding: 3rem 2rem;
     }
 }
-
-@media(max-width:768px){
-    #menu-btn{
-    
+@media (max-width: 768px) {
+    #menu-btn {
         display: inline-block;
-        cursor: pointer;
     }
-    
+
+    .header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .header .navbar {
+        position: fixed;  /* إبقاء القائمة خارج الهيدر */
+        top: 70px; /* ضعها أسفل الهيدر مباشرة */
+        left: 0;
+        width: 100%;
+        background: var(--bg-color);
+        display: none; /* إخفاء افتراضي */
+        max-height: 300px; /* تحديد أقصى ارتفاع */
+        overflow-y: auto; /* السماح بالتمرير إذا زاد المحتوى */
+        z-index: 1001; /* ضمان ظهورها فوق أي شيء */
+    }
+
+    .header .navbar.active {
+        display: block; /* إظهار عند النقر على زر القائمة */
+    }
+
+    .navbar a {
+        margin: 1rem;
+        font-size: 1.8rem;
+        display: block;
+        padding: 10px 15px;
+    }
 
 
- .header .navbar{
-    position: absolute;
-    top: 99%;
-    left: 0;
-    right: 0;
-    background: var(--bg-color);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    transition: clip-path 0.3s ease-in-out; 
-        
-  }
-
-  .header .navbar.active {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
- 
-  }
-  
-  .navbar a{
-    margin: 2rem;
-    font-size: 2rem;
-    display: block;
-   
-  }
   .home{
     margin-top: 10rem;
 
