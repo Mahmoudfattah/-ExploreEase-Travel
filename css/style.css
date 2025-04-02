@@ -365,6 +365,8 @@ body{
     }
     a{
        display:flex;
+        justify-content: center;
+        align-items: center;
 
           i{
             padding-right: .5rem;
