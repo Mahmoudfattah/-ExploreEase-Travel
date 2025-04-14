@@ -64,63 +64,6 @@ body{
     overflow-x: hidden;
 
 }
-
-
-.btn{
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 1rem 3rem;
-    font-size: 1.7rem;
-    color: var(--blue);
-    border: var(--border);
-    border-radius: 5rem;
-    cursor: pointer;
-    background: none;
-}
-.btn:hover{
-
-    background: var(--blue);
-   color: var(--black);
-}
-.header{
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1000;
-    background: var(--bg-color);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 24px 9%;
-
-    
-
-   
-
-}
-.navbar a{
-    font-size: 1.7rem;
-    color: var(--light);
-    display:inline-block ;
-    margin: 0 1rem;
-    /* padding:  0 1rem; */
-}
-.navbar a:hover{
-    color: var(--blue);
-}
-.header .logo{
-    font-size: 40px;
-    color: var(--white);
-    font-weight: bolder;
-
-  
-}
-.logo i{
-    color: var(--blue);
-    padding-right: 8px;
-}
-
 #menu-btn{
     font-size: 2.5rem;
     color: var(--white);
@@ -129,163 +72,242 @@ body{
 }
 
 
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: none;
+    border: var(--border);
+    color: var(--blue);
+    cursor: pointer;
+    border-radius: 5rem;
+    font-size: 1.7rem;
+    transition: all .3s ease-in-out !important;
 
+  
+ 
+}
+.btn:hover{
+    color: var(--black);
+    background: var(--blue);
+   
+   
+}
+.header{
+    width: 100%;
+    padding: 2rem 9%;
+   position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: var(--bg-color);
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    display: flex;
+}
+.navbar a{
+
+   font-size: 1.7rem;
+    color: var(--light);
+    font-weight: bolder;
+    display: inline-block;
+    margin: 0 1rem;
+   
+
+}
+.navbar a:hover{
+  
+ color: var(--blue);
+    
+}
+.header .logo{
+    font-size: 40px;
+    color: var(--white);
+    font-weight: bolder;
+   
+  
+}
+.logo i{ 
+    color: var(--blue);
+    padding-right: 8px;
+
+}
+  
+    
 
 
 /* home */
 .home {
-    margin-top: 12rem; /* أو أي قيمة تحتاجها حسب التصميم */
-    width: 80%;
-    border-radius: 1rem;
 
-   
-    /* background: linear-gradient(var(--black-bg), var(--black-bg)), url(../images/Home.jpg) no-repeat center center; */
-    background: linear-gradient(var(--black-bg), var(--black-bg)), url(../images/Home.jpg) no-repeat center center;
-    background-position: center;
-    background-size: cover;
-    display: flex;
+    margin-top: 12rem;
+    width: 80%;
     margin-left: 10%;
-    min-height: 80vh;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(var(--black-bg), var(--black-bg)), url(../images/Home.jpg);
+    background-position: center;
+    background-size: cover;
     padding-bottom: 5rem;
-    
+    display: flex;
+    border-radius: 1rem;
+    min-height: 80vh;
+  
+ 
 
 }
 .home .content{
     text-align: center;
-
     overflow: hidden;
+  
+    
+    
     span {
-        font-weight: bolder;
-        color: transparent;
-        -webkit-text-stroke: 0.1rem var(--white); /* تقليل حجم التحديد */
-         font-size: 4vw;
-        display: block;
-        text-align: center; /* لجعل النص في المنتصف */
+       font-weight: bloder;
+       color: transparent;
+       -webkit-text-stroke: 0.1rem var(--white);
+       font-size: 4rem;
+       display: block;
+       text-align: center;
        
     }
     
     h3{
-        font-size: 6vw;
-        color: var(--white);
+       font-size: 6rem;
+       color: var(--white);
 
     }
     p{
-        max-width: 60rem;
-        margin: 16px auto;
-        font-size: 1.4rem;
-        color: var(--light);
-        line-height: 2;
+       max-width: 60rem;
+       margin: 16px auto;
+       line-height: 2;
+       font-size: 1.4rem;
+       color: var(--light);
+      
     }
 
 }
 
 .book-form{
+
     width: 70%;
+    background: var(--bg-color);
     margin: 1rem auto;
     margin-top: -5rem;
-    background: var(--bg-color);
     border-radius: 1rem;
     box-shadow: 0 .5rem 1rem rgba(17,17,17,.3);
-    padding: 3rem 2rem;
+    padding: 3.4rem 2rem;
+   
 }
 .book-form form{
-        display: flex;
-        align-items: flex-end;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-    
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+     
     }
      form .inputBox{
-            flex: 1 1 15rem;
+        flex: 1 1 15rem;
+         
         }
    form  .btn{
-        flex: 1 1 10rem;
-        margin-left: .1rem;
+    flex: 1 1 10rem;
+    margin-left: .1rem;
+       
       
        }
 
        .inputBox span{
         font-size: 1.6rem;
         color: var(--light);
-       
-        margin-left: 10px
+        margin-left: 10px;
+              
 
        }
 
        .inputBox input{
+
         width: 100%;
         padding: 1.2rem 1.4rem;
         border-radius: 5rem;
-        border: var(--border);
-        font-size: 1.6rem;
-        color: var(--light);
-        text-transform: none;
         background: none;
-        margin-top: 1rem;
+        font-size: 1.5rem;
+        color: var(--white);
+        border: var(--border);
+        margin-top: .5rem;
+        outline: none;
+        text-transform: none;
+      
        }     
 
 
 
        .about{
-
+         
         display: flex;
-        align-items: center;
         flex-wrap: wrap;
-        gap: 2rem;
-       
+        align-items: center;
         margin-bottom: 5rem;
-        
+       
+       gap: 2rem;
+          
+     
             
 
        }
        .about  .video-container{
-        flex: 1 1 42rem;
-       
+      
+       flex: 1 1 42rem;
 
 
     }
     .video-container video{
-        border-radius: 1rem;
+
         width: 100%;
+        border-radius: 1rem;
+      
     }
     .video-container .controls{
-        text-align: center;
+       text-align: center;
         padding: 2rem 0;
+     
         span{
-            height: 2rem;
-            width: 2rem;
-            display: inline-block;
-            border-radius: 50%;
-            background: var(--white);
-            cursor: pointer;
-            margin: .7rem;
+          height: 2rem;
+          width: 2rem;
+          border-radius: 50%;
+          background: var(--white);
+          display: inline-block;
+          cursor: pointer;
+          margin: .7rem;
            
         }
        
     }
     .controls span:hover{
+
         background: var(--blue);
+  
 
     }
     .about  .content{
         flex: 1 1 42rem;
-    
         margin-bottom: 5rem;
         padding-top: 2rem;
+       
         span{
-
             color: var(--blue);
             font-size: 2rem;
+
+         
         }
         h3{
-
             color: var(--white);
             font-size: 3.7rem;
             margin-top: .5rem;
+
         }
         p{
+           
             padding: 1rem 0;
             font-size: 1.4rem;
             color: var(--light);
@@ -317,7 +339,8 @@ body{
 
 .destination .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+     grid-template-columns: repeat(auto-fit, minmax(26rem,1fr));
+
     gap: 1.5rem;
     overflow: hidden;
     
@@ -346,7 +369,7 @@ body{
  
 
 
-.destination .box:hover img{
+.destination .image:hover img{
     transform: scale(1.1);
 }
 
@@ -364,19 +387,21 @@ body{
         line-height: 2;
     }
     a{
-       display:flex;
-        justify-content: center;
-        align-items: center;
+         display: inline-flex;
 
           i{
             padding-right: .5rem;
+        
           }
     }
 }
 
+
 .destination a{
     font-size: 1.7rem;
         color: var(--blue);
+        align-items: center;
+      
 }
 .destination a:hover i{
     padding-left: 1rem;
@@ -398,6 +423,7 @@ body{
         background: var(--bg-color);
         text-align: center;
         padding: 3rem;
+        border: 1px solid transparent;
        
 
         i{
@@ -742,6 +768,7 @@ padding: 2rem ;
             border-radius: 1rem;
             padding: 2rem;
             background: var(--bg-color);
+            border: 1px solid transparent;
           
            
              
